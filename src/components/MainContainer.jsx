@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const MainContainer = () => {
+export default function MainContainer () {
   return (
     <div>MainContainer</div>
   )
