@@ -41,7 +41,7 @@ export default function Login() {
 					<img
 						src={Ulogo}
 						alt=""
-						className="top-0 w-1/4 h-1/4"
+						className="top-0 w-3/5 md:w-1/4 h-1/4"
 					/>
 					<button
 						onClick={toggleSignUp}
@@ -61,7 +61,7 @@ export default function Login() {
 							</p>
 						</span>
 					</p> */}
-					<h1 className=" text-center text-[6vh] md:text-[4.5vw] text-[#FFFFFF]">
+					<h1 className=" text-center text-[6vh] md:text-[4.5vw] text-[#FFFFFF] transition-transform ease-in-out duration-300">
 						<Typical
 							loop={Infinity}
 							steps={[
@@ -87,7 +87,7 @@ export default function Login() {
 			<div
 				className={`w-full min-h-[100vh] flex  bg-[#340835] md:flex justify-center  items-center px-3  relative flex-grow `}
 			>
-				<div className="w-[80%] md:min-w-[72%] mx-auto py-6 flex-col rounded-tl-[100px] flex justify-center items-center rounded-br-[100px]  bg-[#FFFFFF] ">
+				<div className="w-[94%] sm:min-w-[85%] md:min-w-[85%] sm:w-[90%] mx-auto h-[68%]  py-5 flex-col rounded-tl-[100px] flex justify-center items-center rounded-br-[100px]  bg-[#FFFFFF] ">
 					{!isMobleScreen && (
 						<AiOutlineClose
 							onClick={toggleSignUp}
@@ -238,9 +238,9 @@ export default function Login() {
 							Sign Up
 						</button>
 					</form>
-					<p className="md:text-[.8rem] text-[.67rem] font-light md:font-semibold text-[#29002A]">
+					<p className="md:text-[.77rem] text-[.58rem] m-1 font-light md:font-semibold text-[#29002A]">
 						Already Have an account?{" "}
-						<span className="text-sm font-semibold cursor-pointer">
+						<span className="text-sm font-extrabold cursor-pointer">
 							LOGIN
 						</span>
 					</p>
