@@ -37,15 +37,15 @@ export default function Login() {
 					!isMobleScreen && "hidden"
 				} relative top-0 h-[100vh] w-screen flex-grow md:flex overflow-hidden`}
 			>
-				<div className=" absolute w-auto top-7 sm:top-28 left-[10%] right-[10%] gap-[30em] sm:gap-[24rem] flex items-center justify-center flex-col m-auto">
+				<div className=" absolute bottom-[5%]  top-6 sm:top-28 left-[10%] right-[10%] sm:gap-[24rem] flex items-center justify-between flex-col m-auto">
 					<img
 						src={Ulogo}
 						alt=""
-						className="w-1/4 h-1/4"
+						className="top-0 w-1/4 h-1/4"
 					/>
 					<button
 						onClick={toggleSignUp}
-						className=" sm:hidden rounded-md bg-[#FFFFFF] text-2xl font-bold py-2 px-4 w-60"
+						className=" md:hidden rounded-md bg-[#FFFFFF] text-2xl font-bold py-2 px-4 w-60"
 					>
 						sign Up
 					</button>
@@ -87,7 +87,7 @@ export default function Login() {
 			<div
 				className={`w-full min-h-[100vh] flex  bg-[#340835] md:flex justify-center  items-center px-3  relative flex-grow `}
 			>
-				<div className="w-auto m-auto p-6 flex-col rounded-tl-[100px] flex justify-center items-center rounded-br-[100px]  bg-[#FFFFFF] ">
+				<div className="w-[80%] md:min-w-[72%] mx-auto py-6 flex-col rounded-tl-[100px] flex justify-center items-center rounded-br-[100px]  bg-[#FFFFFF] ">
 					{!isMobleScreen && (
 						<AiOutlineClose
 							onClick={toggleSignUp}
@@ -99,9 +99,9 @@ export default function Login() {
 					</div>
 					<form
 						onSubmit={handleSubmit((data) => console.log(data))}
-						className="flex flex-col items-center justify-center gap-6 md:w-[360px] min-w-[290px] sm:w-full"
+						className="flex flex-col items-center justify-center w-full full"
 					>
-						<div className="relative bg-[#F0F0F0] hover:scale-105 duration-500 ease-in-out rounded-md">
+						<div className="relative w-[80%] bg-[#F0F0F0] hover:scale-105 duration-500 ease-in-out rounded-md">
 							<img
 								src={Usericon}
 								alt=""
@@ -111,16 +111,16 @@ export default function Login() {
 								type="text"
 								{...register("name", { required: true })}
 								placeholder="user name..."
-								className="w-auto py-2 pl-10 placeholder-gray-300 bg-transparent px- focus:outline-none "
+								className="w-[100%] py-2 pl-10 text-base font-normal pr-4 placeholder-gray-300 bg-transparent focus:outline-none "
 							/>
 						</div>
 						{errors.name && (
-							<p className="text-[.6rem] font-thin text-red-700">
-								user full name is requied
+							<p className="text-[.6rem] -ml-[36%]  font-thin text-red-700">
+								user full name is required
 							</p>
 						)}
 
-						<div className="relative bg-[#F0F0F0] hover:scale-105 duration-500 ease-in-out rounded-md">
+						<div className="relative w-[80%] mt-6 bg-[#F0F0F0] hover:scale-105 duration-500 ease-in-out rounded-md">
 							<img
 								src={mail}
 								alt=""
@@ -134,20 +134,20 @@ export default function Login() {
 										/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/,
 								})}
 								placeholder="email here..."
-								className="w-auto px-2 py-2 pl-10 placeholder-gray-300 bg-transparent focus:outline-none "
+								className="w-[100%] py-2 pl-10 text-base font-normal pr-4 placeholder-gray-300 bg-transparent focus:outline-none "
 							/>
 						</div>
-						{errors.email?.type === "requied" && (
-							<p className="text-[.6rem] font-thin text-red-700">
+						{errors.email?.type === "required" && (
+							<p className="text-[.6rem] -ml-[36%]  font-thin text-red-700">
 								this field can't be empty
 							</p>
 						)}
 						{errors.email?.type === "pattern" && (
-							<p className="text-[.6rem] font-thin text-red-700">
+							<p className="text-[.6rem] -ml-[36%] font-thin text-red-700">
 								please enter the right emil{" "}
 							</p>
 						)}
-						<div className="relative bg-[#F0F0F0] hover:scale-105 duration-500 ease-in-out rounded-md">
+						<div className="relative w-[80%] mt-6 bg-[#F0F0F0] hover:scale-105 duration-500 ease-in-out rounded-md">
 							<img
 								src={call}
 								alt=""
@@ -161,25 +161,25 @@ export default function Login() {
 								})}
 								type="number"
 								placeholder="phone number..."
-								className="w-auto px-2 py-2 pl-10 placeholder-gray-300 bg-transparent focus:outline-none "
+								className="w-[100%] py-2 pl-10 text-base font-normal pr-4 placeholder-gray-300 bg-transparent focus:outline-none"
 							/>
 						</div>
 						{errors.number?.type === "required" && (
-							<p className="text-[.6rem] font-thin text-red-700">
+							<p className="text-[.6rem] -ml-[36%]  font-thin text-red-700">
 								phone No is requeid
 							</p>
 						)}
 						{errors.number?.type === "minLength" && (
-							<p className="text-[.6rem] font-thin text-red-700">
+							<p className="text-[.6rem] -ml-[36%]  font-thin text-red-700">
 								phone digits cannot be less than 10
 							</p>
 						)}
 						{errors.number?.type === "maxLength" && (
-							<p className="text-[.6rem] font-thin text-red-700">
+							<p className="text-[.6rem] -ml-[36%]  font-thin text-red-700">
 								phone digits cannot be less than 10
 							</p>
 						)}
-						<div className="relative bg-[#F0F0F0] hover:scale-105 duration-500 ease-in-out rounded-md">
+						<div className="relative w-[80%] mt-6 bg-[#F0F0F0] hover:scale-105 duration-500 ease-in-out rounded-md">
 							<img
 								src={padlock}
 								alt=""
@@ -193,25 +193,25 @@ export default function Login() {
 								})}
 								type="password"
 								placeholder="passward..."
-								className="w-auto px-2 py-2 pl-10 placeholder-gray-300 bg-transparent focus:outline-none "
+								className="w-[100%] py-2 pl-10 text-base font-normal pr-4 placeholder-gray-300 bg-transparent focus:outline-none"
 							/>
 						</div>
 						{errors.passward?.type === "required" && (
-							<p className="text-[.6rem] font-thin text-red-700">
+							<p className="text-[.6rem] -ml-[36%] font-thin text-red-700">
 								passward is requeid
 							</p>
 						)}
 						{errors.number?.type === "minLength" && (
-							<p className="text-[1rem] font-thin text-red-700">
+							<p className="text-[.6rem] -ml-[36%]  font-thin text-red-700">
 								passward cannot be less than 14 characters
 							</p>
 						)}
 						{errors.number?.type === "maxLength" && (
-							<p className="text-[1rem] font-thin text-red-700">
+							<p className="text-[.6rem] -ml-[36%]  font-thin text-red-700">
 								passward cannot be greater than 17 characters
 							</p>
 						)}
-						<div className="relative bg-[#F0F0F0] hover:scale-105 duration-500 ease-in-out rounded-md">
+						<div className="relative w-[80%] mt-6 bg-[#F0F0F0] hover:scale-105 duration-500 ease-in-out rounded-md">
 							<img
 								src={padlock}
 								alt=""
@@ -220,29 +220,30 @@ export default function Login() {
 							<input
 								{...register("confirmpassward", { required: true })}
 								type="password"
-								placeholder="ocnfirm passward..."
-								className="w-auto px-2 py-2 pl-10 placeholder-gray-300 bg-transparent focus:outline-none"
+								placeholder="cocnfirm passward..."
+								className="w-[100%] py-2 pl-10 text-base font-normal pr-4 placeholder-gray-300 bg-transparent focus:outline-none"
 							/>
 						</div>
-						{errors.confirmpassward?.type === "passward" && (
-							<p className="text-[1rem] font-thin text-red-700">
+						{errors.confirmpassward?.type ===
+							"confirmpassward" && (
+							<p className="text-[.6rem] -ml-[36%]  font-thin text-red-700">
 								passward is requeid
 							</p>
 						)}
 						<button
 							type="submit"
-							className="bg-[#29002A] w-[80%] p-2 mt-2 text-md rounded-[0.600rem] font-bold text-[#F0F0F0] hover:scale-95 duration-200 ease-in-out"
+							className="bg-[#29002A] w-[67%] p-2 m-4 text-md rounded-[0.600rem] font-bold text-[#F0F0F0] hover:scale-95 duration-200 ease-in-out"
 						>
 							{" "}
 							Sign Up
 						</button>
-						<p className="text-sm font-semibold text-[#29002A]">
-							Already Have an account?{" "}
-							<span className="font-bold cursor-pointer">
-								LOGIN
-							</span>
-						</p>
 					</form>
+					<p className="md:text-[.8rem] text-[.67rem] font-light md:font-semibold text-[#29002A]">
+						Already Have an account?{" "}
+						<span className="text-sm font-semibold cursor-pointer">
+							LOGIN
+						</span>
+					</p>
 				</div>
 			</div>
 		</div>
