@@ -40,51 +40,6 @@ export default function UserProfile() {
 		console.log(newValues);
 	};
 
-	// if (isEdit) {
-	// 	return (
-	// 		// <form
-	// 		// 	className=" f"
-	// 		// 	onSubmit={saveUpdates}
-	// 		// 	action=""
-	// 		// >
-	// 		// 	<input
-	// 		// 		type="text"
-	// 		// 		value={newValues.name}
-	// 		// 		onChange={(e) =>
-	// 		// 			setNewValues({ ...newValues, name: e.target.value })
-	// 		// 		}
-	// 		// 	/>
-	// 		// 	<input
-	// 		// 		type="text"
-	// 		// 		value={newValues.email}
-	// 		// 		onChange={(e) =>
-	// 		// 			setNewValues({ ...newValues, email: e.target.value })
-	// 		// 		}
-	// 		// 	/>
-	// 		// 	<input
-	// 		// 		type="text"
-	// 		// 		value={newValues.mobil_umber}
-	// 		// 		onChange={(e) =>
-	// 		// 			setNewValues({
-	// 		// 				...newValues,
-	// 		// 				mobil_umber: e.target.value,
-	// 		// 			})
-	// 		// 		}
-	// 		// 	/>
-	// 		// 	<input
-	// 		// 		type="text"
-	// 		// 		value={newValues.profile_image}
-	// 		// 		onChange={(e) => {
-	// 		// 			setNewValues({
-	// 		// 				...newValues,
-	// 		// 				profile_image: e.target.value,
-	// 		// 			});
-	// 		// 		}}
-	// 		// 	/>
-	// 		// 	<button type="submit">Save</button>
-	// 		// </form>
-	// 	);
-	// }
 	return (
 		<div className="bg-[#140516] h-[100vh] w-full py-9 flex items-center  justify-center">
 			<div className=" h-auto bg-[#340835] md:min-w-[65vw] min-w-[90%] border p-2 rounded-md border-black">
@@ -126,14 +81,14 @@ export default function UserProfile() {
 					</button>
 				</div>
 			</div>
-			{isEdit && (
+			{isEdit ? (
 				<Moda
 					saveUpdates={saveUpdates}
 					newValues={newValues}
 					setNewValues={setNewValues}
 					setIsEdit={setIsEdit}
 				/>
-			)}
+			) : null}
 		</div>
 	);
 }
