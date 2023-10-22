@@ -52,17 +52,19 @@ export default function Login() {
 					</button>
 				</div>
 
-				<div className="absolute mx-auto top-[50%]  p-5  flex items-center justify-center">
-					<h1 className=" text-center text-[6vh] md:text-[4.5vw] text-[#FFFFFF] transition-transform ease-in-out duration-300">
+				<div className="absolute mx-auto top-[40%]  p-5  flex items-center justify-center">
+					<h1 className=" text-center text-[6vh] md:text-[4.5vw] text-[#FFFFFF]">
 						<Typical
 							loop={Infinity}
+							wrapper="b"
+							speed={99}
 							steps={[
 								"Join Our Food Sales Community 👩🏾‍🏭",
-								2000,
+								4000,
 								"Sign Up Now for Gourmet 🤝",
-								2000,
+								4000,
 								"Offers and More 💯",
-								2000,
+								4000,
 							]}
 						/>
 					</h1>
@@ -71,7 +73,7 @@ export default function Login() {
 			<div
 				className={`w-full min-h-[100vh] flex flex-col bg-[#340835] justify-center  items-center px-3  relative `}
 			>
-				<div className="absolute top-0 left-0 text-white rounded-md bg-[#888488] text-2xl font-bold py-2 px-4 ">
+				<div className="absolute top-0 left-0 text-white bg-[#888488] md:text-2xl text-md px-1 font-bold py-2 md:px-4 ">
 					<Link to={"/"}>home</Link>
 				</div>
 				<div className="w-[94%]  sm:min-w-[85%] md:min-w-[85%] sm:w-[90%] mx-auto h-[70%]  py-5 flex-col rounded-tl-[100px] flex justify-center items-center rounded-br-[100px]  bg-[#FFFFFF] ">

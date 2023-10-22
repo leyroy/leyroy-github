@@ -87,7 +87,7 @@ export default function UserProfile() {
 	// }
 	return (
 		<div className="bg-[#140516] h-[100vh] w-full py-9 flex items-center  justify-center">
-			<div className=" h-auto bg-[#340835] md:min-w-[80vw] min:w-[95%] border p-2 rounded-md border-black">
+			<div className=" h-auto bg-[#340835] md:min-w-[65vw] min-w-[90%] border p-2 rounded-md border-black">
 				<div className="flex justify-between items-center">
 					<h1 className="text-white font-extrabold text-3xl">
 						About You
