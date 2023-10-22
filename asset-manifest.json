@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/leyroy-github/static/css/main.f0202cf8.css",
-    "main.js": "/leyroy-github/static/js/main.a94875cb.js",
+    "main.js": "/leyroy-github/static/js/main.3b2e48f2.js",
     "static/media/signup.png": "/leyroy-github/static/media/signup.2e93ac099fac4c722e5e.png",
     "static/media/logo.png": "/leyroy-github/static/media/logo.0f99324454e3c3ccba98.png",
     "static/media/avatar.png": "/leyroy-github/static/media/avatar.68cdc4513e601d28a382.png",
     "index.html": "/leyroy-github/index.html",
     "main.f0202cf8.css.map": "/leyroy-github/static/css/main.f0202cf8.css.map",
-    "main.a94875cb.js.map": "/leyroy-github/static/js/main.a94875cb.js.map"
+    "main.3b2e48f2.js.map": "/leyroy-github/static/js/main.3b2e48f2.js.map"
   },
   "entrypoints": [
     "static/css/main.f0202cf8.css",
-    "static/js/main.a94875cb.js"
+    "static/js/main.3b2e48f2.js"
   ]
 }
