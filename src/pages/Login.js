@@ -9,6 +9,7 @@ import Usericon from "../asset/Usericon.png";
 import mail from "../asset/mail.png";
 import call from "../asset/call.png";
 import padlock from "../asset/padlock.png";
+import { Link } from "react-router-dom";
 
 // const colo = {
 // 	primary: "#060606",
@@ -68,8 +69,11 @@ export default function Login() {
 				</div>
 			</div>
 			<div
-				className={`w-full min-h-[100vh] flex  bg-[#340835] md:flex justify-center  items-center px-3  relative flex-grow `}
+				className={`w-full min-h-[100vh] flex flex-col bg-[#340835] justify-center  items-center px-3  relative `}
 			>
+				<div className="absolute top-0 left-0 text-white rounded-md bg-[#888488] text-2xl font-bold py-2 px-4 ">
+					<Link to={"/"}>home</Link>
+				</div>
 				<div className="w-[94%]  sm:min-w-[85%] md:min-w-[85%] sm:w-[90%] mx-auto h-[70%]  py-5 flex-col rounded-tl-[100px] flex justify-center items-center rounded-br-[100px]  bg-[#FFFFFF] ">
 					{!isMobleScreen && (
 						<AiOutlineClose
