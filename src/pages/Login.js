@@ -4,11 +4,11 @@ import Typical from "react-typical";
 import { useForm } from "react-hook-form";
 
 // assets ussed
-import Ulogo from "./asset/Ulogo.png";
-import Usericon from "./asset/Usericon.png";
-import mail from "./asset/mail.png";
-import call from "./asset/call.png";
-import padlock from "./asset/padlock.png";
+import Ulogo from "../asset/Ulogo.png";
+import Usericon from "../asset/Usericon.png";
+import mail from "../asset/mail.png";
+import call from "../asset/call.png";
+import padlock from "../asset/padlock.png";
 
 // const colo = {
 // 	primary: "#060606",
@@ -43,12 +43,12 @@ export default function Login() {
 							className=" max-w-[27%] max-h-[27%] min-w-[130px] min-h-[130px] md:w-2/4 h-1/4"
 						/>
 					</div>
-						<button
-							onClick={toggleSignUp}
-							className=" md:hidden rounded-md bg-[#FFFFFF] text-2xl font-bold py-2 px-4 w-60"
-						>
-							sign Up
-						</button>
+					<button
+						onClick={toggleSignUp}
+						className=" md:hidden rounded-md bg-[#FFFFFF] text-2xl font-bold py-2 px-4 w-60"
+					>
+						sign Up
+					</button>
 				</div>
 
 				<div className="absolute mx-auto top-[50%]  p-5  flex items-center justify-center">
@@ -77,7 +77,7 @@ export default function Login() {
 							className="cursor-pointer -mr-[90%] md:hidden -mt-2 p-1 w-7 h-7 font-bold hover:scale-110 duration-200 text-xl text-red-700 rounded-full"
 						/>
 					)}
-					<div className="text-4xl font-bold text-[#340835] mb-6 ">
+					<div className="text-4xl font-bold text-[#340835] mb-4 mt-2 ">
 						Sign Up
 					</div>
 					<form

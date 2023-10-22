@@ -1,12 +1,27 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { CreateContainer, Header, MainContainer } from './components';
-import Login from "./Login";
+
+
+import Login from "./pages/Login";
+import Home from "./pages/Home";
+import UserProfile from "./pages/UserProfile";
 
 export default function App() {
 	return (
-		<div className="flex flex-col w-screen h-auto bg-gray-100">
-			<Login />
-		</div>
+		<Routes>
+			<Route
+				path="/"
+				element={<Home />}
+			/>
+			<Route
+				path="login"
+				element={<Login />}
+			/>
+			<Route
+				path="/userProfile"
+				element={<UserProfile />}
+			/>
+		</Routes>
 	);
 }
