@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Avator from "../img/avatar.png";
 import Moda from "../components/Modal";
 import { Link } from "react-router-dom";
