@@ -15,6 +15,14 @@ html, body{
   scroll-behavior: smooth;
 }
 
+.container1 {
+  background-image: url(./asset/signup.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
