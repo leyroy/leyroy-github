@@ -9,7 +9,7 @@ import UserProfile from "./pages/UserProfile";
 
 export default function App() {
 	return (
-		<Routes>
+		<Routes basename={process.env.PUBLIC_URL}>
 			<Route
 				path="/"
 				element={<Home />}
